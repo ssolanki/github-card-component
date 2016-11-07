@@ -1,0 +1,98 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.content{
+}
+.search-bar{
+	margin: 50px 0px 30px; 
+	.button{
+    padding: 7px 15px;
+	}	
+}
+.hr-line{
+	height: 1px;
+	background: $gray-light;
+}
+.sort-order{
+	margin-top: 20px;
+  display: block;
+  li{
+		position: relative;  	
+  	float: left;
+  	padding-right: 25px;  	 
+  	&:hover{
+  		color: $blue-darkest;
+  	}
+  	span{
+  		cursor: pointer;
+  	}
+  	.fa-sort-down{
+  		position: absolute;
+			right: 15px;
+			top: 0;
+  	}
+  	&:first-of-type{
+  		padding-right: 10px; 
+  	}
+  }
+}
+.profiles{
+  display: inline-block;
+	margin-top:20px;
+	.col-3{
+		margin: 10px 0px;
+		&:nth-child(4n-3){
+			padding-left: 0px;		
+		}
+	}
+	.card{
+		position: relative;
+		border: 1px solid $gray;
+		padding: 3px;
+		&:hover{
+			border: 1px solid $blue;
+			cursor: pointer;
+			p{
+				text-decoration: underline;				
+			}
+		} 
+		a{
+			color: inherit;
+			text-decoration: none;
+		}
+		img{
+			height: 200px;
+	    width: 100%;
+	    margin: 0 auto;
+		}
+		p{
+			margin: 0px;
+		}
+		.fa-close{
+	    position: absolute;
+	    right: 5px;
+	    top: 5px;
+	    padding: 5px;
+	    font-size: 16px;
+		}
+		.info{
+	    padding: 6px 8px;
+		}
+		.name{
+			font-size: 18px;
+			margin: 10px 0px 5px;
+			font-weight: bold;
+		}
+		.location{
+			font-size:14px;
+			margin: 7px 0px;
+		}	
+		.followers{
+			font-size:14px;
+			margin: 7px 0px;
+		}		
+		.title{
+			font-weight: bold;
+		}		
+	}
+}

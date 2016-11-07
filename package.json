@@ -1,0 +1,20 @@
+{
+  "name": "springboard",
+  "version": "1.0.0",
+  "description": "Assignment 1",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sahil",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-auto-reload": "^0.1.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.2.0",
+    "jquery": "^3.1.1"
+  }
+}

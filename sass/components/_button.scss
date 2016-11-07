@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.button{
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid $gray;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 $white;
+    font: 12px/normal sans-serif;
+    color: $black;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    background-color: $gray-light;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($gray-lightest), to($gray-light));
+    background-image: -moz-linear-gradient($gray-lightest, $gray-light);
+    background-image: -ms-linear-gradient($gray-lightest, $gray-light);
+    background-image: -o-linear-gradient($gray-lightest, $gray-light);
+    background-image: linear-gradient($gray-lightest, $gray-light);
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    border-radius: 0.2em;
+    zoom: 1;
+    &:hover{
+    	border-color: $blue-dark;
+	    border-bottom-color: $blue-darkest;
+	    text-decoration: none;
+	    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+	    color: $white;
+	    background-color: $blue;
+	    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($blue-light), to($blue-dark));
+	    background-image: -moz-linear-gradient($blue-light, $blue-dark);
+	    background-image: -o-linear-gradient($blue-light, $blue-dark);
+	    background-image: linear-gradient($blue-light, $blue-dark);
+    }
+}
