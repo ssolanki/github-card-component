@@ -17,14 +17,17 @@
 			<div class="sort-order">
 				<ul>
 					<li> Sort By:</li>
-					<li> <span> Name</span><i class="fa fa-sort-down"></i></li>
-					<li>  <span> Location</span> <i class="fa fa-sort-down"></i></li>
-					<li>  <span> Followers</span> <i class="fa fa-sort-down"></i></li>
+					<li class="active" id="sortMethod0"> <span onclick="setSortedMethod(0)"> Name</span><i class="fa fa-sort-down"></i></li>
+					<li id="sortMethod1">  <span onclick="setSortedMethod(1)"> Location</span> <i class="fa fa-sort-down"></i></li>
+					<li id="sortMethod2">  <span onclick="setSortedMethod(2)"> Followers</span> <i class="fa fa-sort-down"></i></li>
 				</ul>
 			</div>
-			<div class="profiles">
-				<div class="col-3">
-					<div class="card">
+			<div class="profiles" id="profiles">
+				<div class="empty-result" id="emptyResult">
+					No Profiles found.
+				</div>
+				<!--<div class="col-3">
+					 <div class="card">
 						<a href="#" target="_blank">
 							<i class="fa fa-close"></i>
 							<img src="./images/sahil.jpg">
@@ -34,60 +37,8 @@
 								<p class="followers"><span class="title">Followers:</span> <span> 1000</span> </p>
 							</div>
 						</a>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="card">
-						<a href="#" target="_blank">
-							<i class="fa fa-close"></i>
-							<img src="./images/sahil.jpg">
-							<div class="info">
-								<p class="name"> Sahil Solanki</p>
-								<p class="location"><span class="title">Location:</span> <span> India</span> </p>
-								<p class="followers"><span class="title">Followers:</span> <span> 1000</span> </p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="card">
-						<a href="#" target="_blank">
-							<i class="fa fa-close"></i>
-							<img src="./images/sahil.jpg">
-							<div class="info">
-								<p class="name"> Sahil Solanki</p>
-								<p class="location"><span class="title">Location:</span> <span> India</span> </p>
-								<p class="followers"><span class="title">Followers:</span> <span> 1000</span> </p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="card">
-						<a href="#" target="_blank">
-							<i class="fa fa-close"></i>
-							<img src="./images/sahil.jpg">
-							<div class="info">
-								<p class="name"> Sahil Solanki</p>
-								<p class="location"><span class="title">Location:</span> <span> India</span> </p>
-								<p class="followers"><span class="title">Followers:</span> <span> 1000</span> </p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="card">
-						<a href="#" target="_blank">
-							<i class="fa fa-close"></i>
-							<img src="./images/sahil.jpg">
-							<div class="info">
-								<p class="name"> Sahil Solanki</p>
-								<p class="location"><span class="title">Location:</span> <span> India</span> </p>
-								<p class="followers"><span class="title">Followers:</span> <span> 1000</span> </p>
-							</div>
-						</a>
-					</div>
-				</div>
+					</div> 
+				</div> -->
 			</div>
 		</div> 		
 	</div>

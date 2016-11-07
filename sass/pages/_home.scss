@@ -38,6 +38,7 @@
 }
 .profiles{
   display: inline-block;
+  width: 100%;
 	margin-top:20px;
 	.col-3{
 		margin: 10px 0px;
@@ -95,4 +96,12 @@
 			font-weight: bold;
 		}		
 	}
+}
+.no-result{
+	padding: 15px;
+	margin: 0 auto;
+	background: $gray-lightest;	
+}
+.hidden{
+	display: none;
 }

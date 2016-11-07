@@ -14,4 +14,4 @@ go to build directory and open index.html file
 
 If above doesn't work please let me know, I will send the build directory or host somewhere.
 
-Note: per IP request are limited by github.
+Note: per IP requests are limited to 60 for unauthorized sources.
