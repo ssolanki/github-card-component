@@ -8,6 +8,7 @@ var sortMethods = [
 ];
 // setSortedMethod(0);
 var selectedSortMethod = sortMethods[0],selectedSortIndex = 0;
+addEmptyDiv() // add no reuslt div
 function setSortedMethod(sortTypeIndex){
 	if(sortMethods[sortTypeIndex]!==selectedSortMethod){
 		$("#sortMethod"+selectedSortIndex).removeClass("active");
@@ -56,8 +57,11 @@ function createUI(list){
 	for(var i=0;i<list.length;i++){
 		// console.log(getCard(list[i]));
 		$("#profiles").append(getCard(list[i]));
-	}
-	 
+	}	 
+}
+function addEmptyDiv(){
+	var div = '<div class="empty-result" id="emptyResult"> No Profiles found.</div>';
+	$("#profiles").append(div);
 }
 function getCard(obj){
 	var column = document.createElement("div");
@@ -117,7 +121,9 @@ $( "#githubLink" ).submit(function( event ) {
 				return false
 			} else{
 				addObject(obj,profiles);
-    		$("#emptyResult").addClass("hidden");				
+    		$("#emptyResult").addClass("hidden");
+    		$(".sort-order").removeClass("hidden");
+
 				$("#githubId").val("");
 			}
 	})
@@ -136,7 +142,8 @@ $( "#githubLink" ).submit(function( event ) {
     	$(this).find("#"+githubId).remove();
     	removeObject(githubId,profiles);	// remove from profiles list also
     	if(profiles.length==0){
-    		$("#emptyResult").removeClass("hidden");
+    		addEmptyDiv();
+    		$(".sort-order").addClass("hidden");
     	}
     }else{
     	window.open(
