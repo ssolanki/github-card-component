@@ -4,18 +4,20 @@
 ## Installation
 
 ### Pre-requisites
-`Inorder to build you should have node and npm installed.
-Gulp should be globally installed.`
+Inorder to build you should have node and npm installed.
+Gulp should be globally installed.
 
 ### Build
 run these commands to build.
 
 ` npm i `
+
 ` gulp `
 
 go to build directory and open index.html file in browser i.e
 
 ` cd build/ `
+
 ` firefox index.html ` 
 
 I will host demo of the app somewhere very soon.
